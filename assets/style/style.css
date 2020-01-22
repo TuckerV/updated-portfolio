@@ -36,7 +36,7 @@ html, body {
 
 .content-section {
     border: white 2px solid;
-    height: 600px;
+    height: 700px;
     margin: 0 0;
 }
 
@@ -46,28 +46,42 @@ html, body {
 }
 
 .box-left {
-    height: 100px;
+    height: auto;
     margin: 0 0;
     border-top: yellow 2px dotted;
     border-bottom: yellow 2px dotted;
     font-size: 2vw;
     text-align: center !important;
-    /* padding-top: 50%;
-    padding-bottom: 50%; */
     margin: 0 0;
-    color: black;
+    color: white;
 }
 
 .box-left:hover {
     background-color: white;
-    font-size: 4vw;
-    color: black !important;
+    font-weight: bolder;
+    color: #607856;
 }
-#about-me-div {
-    background-color: white;
+
+.populated-div {
     padding: 0;
     margin: 0 0;
     text-align: center;
     border-radius: 35px;
     height: 100%;
+}
+
+#about-me-div {
+    background-color: beige;
+}
+
+#projects-div {
+    background-color: yellow;
+}
+
+#contact-github-div {
+    background-color: turquoise;
+}
+
+.hide {
+    display: none;
 }
