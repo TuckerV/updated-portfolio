@@ -24,3 +24,8 @@ $("#contact-github-selector").on("click", function(){
     $("#contact-github-div").removeClass("hide");
     // alert("Github");
 })
+
+$("#resume-selector").on("click", function(){
+    window.open("assets/pdfs/resume.pdf");
+    // alert("Github");
+})

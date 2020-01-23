@@ -64,11 +64,11 @@ html, body {
     padding-bottom: 5%;
     text-align: center !important;
     margin: 0 0;
-    color: white;
+    color: whitesmoke;
 }
 
 .box-left:hover {
-    background-color: white;
+    background-color: whitesmoke;
     font-weight: bolder;
     color: #607856;
 }
@@ -82,18 +82,18 @@ html, body {
 }
 
 #about-me-div {
-    background-color: beige;
+    background-color: whitesmoke;
     height: auto;
 }
 
 #projects-div {
-    background-color: yellow;
+    background-color: whitesmoke;
     height: auto;
     /* min-height: 100%; */
 }
 
 #contact-github-div {
-    background-color: turquoise;
+    background-color: whitesmoke;
     height: auto;
 }
 
