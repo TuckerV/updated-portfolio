@@ -85,3 +85,19 @@ html, body {
 .hide {
     display: none;
 }
+
+.div-title {
+    font-size: 3vw;
+    color: black;
+    border-bottom: black 2px solid;
+    text-align: center;
+}
+
+img {
+    float: left !important;
+}
+
+.row-about {
+    margin-top: 20px;
+    font-size: 1vw;
+}
