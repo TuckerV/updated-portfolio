@@ -29,3 +29,16 @@ $("#resume-selector").on("click", function(){
     window.open("assets/pdfs/resume.pdf");
     // alert("Github");
 })
+
+$("#streaming-card-image").on("click", function(){
+    window.open("https://tuckerv.github.io/soggybottomboys-project1/");
+})
+$("#weather-card-image").on("click", function(){
+    window.open("https://tuckerv.github.io/weather-dashboard/");
+})
+$("#planner-card-image").on("click", function(){
+    window.open("https://tuckerv.github.io/daily-planner/");
+})
+$("#password-card-image").on("click", function(){
+    window.open("https://tuckerv.github.io/Password-Generator/");
+})
