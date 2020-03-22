@@ -1,6 +1,9 @@
 # updated-portfolio
 Updated personal portfolio, including recent projects and professional information. 
 
+## Link to Deployed page
+https://tuckerv.github.io/updated-portfolio/
+
 ## description
 
 What why how.
