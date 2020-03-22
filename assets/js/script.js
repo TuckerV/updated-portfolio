@@ -1,4 +1,4 @@
-$("#about-me-selector").on("click", function(){
+$(".about-me-selector").on("click", function(){
     $("#contact-github-div").removeClass("hide");
     $("#contact-github-div").addClass("hide");
     $("#projects-div").removeClass("hide");
@@ -7,7 +7,7 @@ $("#about-me-selector").on("click", function(){
     // alert("about");
 })
 
-$("#projects-selector").on("click", function(){
+$(".projects-selector").on("click", function(){
     $("#about-me-div").removeClass("hide");
     $("#about-me-div").addClass("hide");
     $("#contact-github-div").removeClass("hide");
@@ -16,7 +16,7 @@ $("#projects-selector").on("click", function(){
     // alert("projects");
 })
 
-$("#contact-github-selector").on("click", function(){
+$(".contact-github-selector").on("click", function(){
     $("#about-me-div").removeClass("hide");
     $("#about-me-div").addClass("hide");
     $("#projects-div").removeClass("hide");
@@ -25,7 +25,7 @@ $("#contact-github-selector").on("click", function(){
     // alert("Github");
 })
 
-$("#resume-selector").on("click", function(){
+$(".resume-selector").on("click", function(){
     window.open("assets/pdfs/resume.pdf");
     // alert("Github");
 })
@@ -42,3 +42,40 @@ $("#planner-card-image").on("click", function(){
 $("#password-card-image").on("click", function(){
     window.open("https://tuckerv.github.io/Password-Generator/");
 })
+
+$(window).bind("resize", function () {
+    if ($(this).width() < 1000) {
+        console.log($(this).width())
+        $('#left-col').addClass('hide')
+        $('.navbar-row').removeClass('hide')
+        $('.project-cards-static').removeClass('hide')
+        $('.project-cards-carousel').addClass('hide')
+        
+    } else {
+        $('#left-col').removeClass('hide')
+        $('.navbar-row').addClass('hide')
+        $('.project-cards-static').addClass('hide')
+        $('.project-cards-carousel').removeClass('hide')
+        // navbar-row
+        // project-cards-carousel
+        // project-cards-static
+    }
+}).trigger('resize');
+
+// Navbar Stuff
+$(document).ready(function () {
+
+    $('.first-button').on('click', function () {
+  
+      $('.animated-icon1').toggleClass('open');
+    });
+    $('.second-button').on('click', function () {
+  
+      $('.animated-icon2').toggleClass('open');
+    });
+    $('.third-button').on('click', function () {
+  
+      $('.animated-icon3').toggleClass('open');
+    });
+  });
+// End Navbar Stuff

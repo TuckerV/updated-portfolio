@@ -14,40 +14,69 @@
 
 </head>
   <body>
-      <div class="container-fluid d-flex h-100 flex-column">
-        <div class="row whole-container-row">
-            <div class="col-1 m-0 p-0"></div>
-            <div class="col-2 selections-column m-0 p-0">
+      <div class="container-fluid d-flex h-100 flex-column" id="main-container">
+        <div class="row whole-container-row justify-content-center">
+            <div class="col-2 selections-column m-0 p-0" id="left-col">
                 <div class="row w-100">
                   <div class="col-12 m-0 p-0">
                     <div class="row box-left align-items-center">
-                        <div class="col-12" id="about-me-selector">
+                        <div class="col-12 about-me-selector" id="about-me-selector">
                         About
                         </div>
                     </div>  
                     <div class="row box-left align-items-center">
-                        <div class="col-12" id="projects-selector">
+                        <div class="col-12 projects-selector" id="projects-selector">
                         Projects
                         </div>
                     </div>  
                     <div class="row box-left align-items-center">
-                        <div class="col-12" id="contact-github-selector">
+                        <div class="col-12 contact-github-selector" id="contact-github-selector">
                         Contact
                         </div>
                     </div>
                     <div class="row box-left align-items-center">
-                        <div class="col-12" id="resume-selector">
+                        <div class="col-12 resume-selector" id="resume-selector">
                             Resume
                         </div>
                     </div>
                   </div>
                 </div>  
             </div>
-            <div class="col-9 right-section">
+            <div class="col right-section">
                 <div class="row m-0 p-0">
                     <div class="col-12 p-0 m-0">
                         <p class="name text-center">Tucker Vassau
                         </p>
+                    </div>
+                </div>
+                <div class="row navbar-row">
+                    <div class="col-12">
+                        <nav class="navbar navbar-dark p-0 m-0 indigo darken-2">
+                                <button class="navbar-toggler third-button p-3 m-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent22"
+                                aria-controls="navbarSupportedContent22" aria-expanded="false" aria-label="Toggle navigation">
+                                <div class="animated-icon3"><span></span><span></span><span></span></div>
+                                </button>
+                            
+                                <!-- Collapsible content -->
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent22">
+                            
+                                <!-- Links -->
+                                <ul class="navbar-nav mr-auto ml-3">
+                                    <li class="nav-item p-2 about-me-selector" >
+                                        <div style="color: whitesmoke;">About Me</div>
+                                    </li>
+                                    <li class="nav-item p-2 projects-selector" >
+                                        <div style="color: whitesmoke;">Projects</div>
+                                    </li>
+                                    <li class="nav-item p-2 contact-github-selector" >
+                                        <div style="color: whitesmoke;">Contact</div>
+                                    </li>
+                                    <li class="nav-item p-2 resume-selector" >
+                                        <div style="color: whitesmoke;">Resume</div>
+                                    </li>
+                                </ul>
+                            </div>
+                          </nav>
                     </div>
                 </div>
                 <div class="row content-section justify-content-center">
@@ -72,49 +101,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="projects-div" class="populated-div hide">
+                        <div id="projects-div" class="populated-div hide container">
                             <div class="row justify-content-center m-0 p-0">
                                 <div class="col-11 div-title" >
                                     Projects
                                 </div>
                             </div>
-                            <div class="row row-about justify-content-center p-0 project-cards">
-                                <div class="col-md-2"><div class="card">
-                                    <img class="card-img-top" id="streaming-card-image" src="assets/images/streaming-search.jpg" alt="">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Streaming Search</h4>
-                                        <p class="card-text">Application that allows you to search a movie or show and will return information about the searched media and where it can be watched. 
-                                        </p>
-                                        <a target="_blank" href="https://github.com/TuckerV/soggybottomboys-project1">Repo</a>
-                                    </div>
-                                </div></div>
-                                <div class="col-md-2"><div class="card">
-                                    <img class="card-img-top" id="weather-card-image" src="assets/images/weather-planner.png" alt="">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Weather App</h4>
-                                        <p class="card-text">Application that allows user to search a city, and it will return a 5 day forecast, and current condition.
-                                        </p>
-                                        <a target="_blank" href="https://github.com/TuckerV/weather-dashboard">Repo</a>
-                                    </div>
-                                </div></div>
-                                <div class="col-md-2"><div class="card">
-                                    <img class="card-img-top" id="planner-card-image" src="assets/images/planner.png" alt="">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Daily Planner</h4>
-                                        <p class="card-text">A daily 9-5 work planner that allows the user to input to-do items, and save them for future reference.
-                                        </p>
-                                        <a target="_blank" href="https://github.com/TuckerV/daily-planner">Repo</a>
-                                    </div>
-                                </div></div>
-                                <div class="col-md-2"><div class="card">
-                                    <img class="card-img-top" id="password-card-image" src="assets/images/password-generator.png" alt="">
-                                    <div class="card-body">
-                                        <h4 class="card-title">Password Generator</h4>
-                                        <p class="card-text">Application that allows the user to choose from a variety of options, that will generate a random password which the user can copy.
-                                        </p>
-                                        <a target="_blank" href="https://github.com/TuckerV/Password-Generator">Repo</a>
-                                    </div>
-                                </div></div>
+                            <div class="row justify-content-center project-cards-carousel m-1 p-3">
                                 <div class="row justify-content-center">
                                     <div class="col-11">
                                         <p>
@@ -122,6 +115,114 @@
                                         </p>
                                     </div>
                                 </div>
+                                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                      <div class="carousel-item active">
+                                          <div class="row justify-content-center">
+                                              <div class="col-lg-5"><div class="card m-4">
+                                                  <img class="card-img-top" id="streaming-card-image" src="assets/images/streaming-search.jpg" alt="">
+                                                  <div class="card-body">
+                                                      <h4 class="card-title">Streaming Search</h4>
+                                                      <p class="card-text">Application that allows you to search a movie or show and will return information about the searched media and where it can be watched. 
+                                                      </p>
+                                                      <a target="_blank" href="https://github.com/TuckerV/soggybottomboys-project1"><button type="button" class="btn btn-primary">Repo</button></a>
+                                                  </div>
+                                              </div></div>
+                                              <div class="col-lg-5"><div class="card m-4">
+                                                <img class="card-img-top" id="weather-card-image" src="assets/images/weather-planner.png" alt="">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Weather App</h4>
+                                                    <p class="card-text">Application that allows user to search a city, and it will return a 5 day forecast, and current condition.
+                                                    </p>
+                                                    <a target="_blank" href="https://github.com/TuckerV/weather-dashboard"><button type="button" class="btn btn-primary">Repo</button></a>
+                                                </div>
+                                            </div></div>
+                                          </div>
+                                      </div>
+                                      <div class="carousel-item">
+                                       <div class="row justify-content-center">
+                                        <div class="col-lg-5"><div class="card m-4">
+                                            <img class="card-img-top" id="planner-card-image" src="assets/images/planner.png" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Daily Planner</h4>
+                                                <p class="card-text">A daily 9-5 work planner that allows the user to input to-do items, and save them for future reference.
+                                                </p>
+                                                <a target="_blank" href="https://github.com/TuckerV/daily-planner"><button type="button" class="btn btn-primary">Repo</button></a>
+                                            </div>
+                                        </div></div>
+                                        <div class="col-lg-5"><div class="card m-4">
+                                            <img class="card-img-top" id="password-card-image" src="assets/images/password-generator.png" alt="">
+                                            <div class="card-body">
+                                                <h4 class="card-title">Password Generator</h4>
+                                                <p class="card-text">Application that allows the user to choose from a variety of options, that will generate a random password which the user can copy.
+                                                </p>
+                                                <a target="_blank" href="https://github.com/TuckerV/Password-Generator"><button type="button" class="btn btn-primary">Repo</button></a>
+                                            </div>
+                                        </div></div>
+                                       </div>
+                                      </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                      <span class="sr-only">Next</span>
+                                    </a>
+                                  </div>
+                            </div>
+                            
+
+                            <div class="row row-about justify-content-center project-cards-static hide">
+                                <div class="row justify-content-center">
+                                    <div class="col-11">
+                                        <p>
+                                            Here are a few of the projects that I have worked on during my time as I learned to code and build applications. Each project highlights a new skill learned, and a new facet of understanding each language. 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5"><div class="card m-4">
+                                    <img class="card-img-top" id="streaming-card-image" src="assets/images/streaming-search.jpg" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Streaming Search</h4>
+                                        <p class="card-text">Application that allows you to search a movie or show and will return information about the searched media and where it can be watched. 
+                                        </p>
+                                        <a target="_blank" href="https://github.com/TuckerV/soggybottomboys-project1"><button type="button" class="btn btn-primary">Repo</button></a>
+                                    </div>
+                                </div></div>
+                                <div class="col-lg-5"><div class="card m-4">
+                                    <img class="card-img-top" id="weather-card-image" src="assets/images/weather-planner.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Weather App</h4>
+                                        <p class="card-text">Application that allows user to search a city, and it will return a 5 day forecast, and current condition.
+                                        </p>
+                                        <a target="_blank" href="https://github.com/TuckerV/weather-dashboard"><button type="button" class="btn btn-primary">Repo</button></a>
+                                    </div>
+                                </div></div>
+                                <div class="col-lg-6"><div class="card m-4">
+                                    <img class="card-img-top" id="planner-card-image" src="assets/images/planner.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Daily Planner</h4>
+                                        <p class="card-text">A daily 9-5 work planner that allows the user to input to-do items, and save them for future reference.
+                                        </p>
+                                        <a target="_blank" href="https://github.com/TuckerV/daily-planner"><button type="button" class="btn btn-primary">Repo</button></a>
+                                    </div>
+                                </div></div>
+                                <div class="col-lg-6"><div class="card m-4">
+                                    <img class="card-img-top" id="password-card-image" src="assets/images/password-generator.png" alt="">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Password Generator</h4>
+                                        <p class="card-text">Application that allows the user to choose from a variety of options, that will generate a random password which the user can copy.
+                                        </p>
+                                        <a target="_blank" href="https://github.com/TuckerV/Password-Generator"><button type="button" class="btn btn-primary">Repo</button></a>
+                                    </div>
+                                </div></div>
+                              
 
                             </div>
                         </div>
