@@ -30,17 +30,23 @@ $(".resume-selector").on("click", function(){
     // alert("Github");
 })
 
-$("#streaming-card-image").on("click", function(){
+$(".streaming-card-image").on("click", function(){
     window.open("https://tuckerv.github.io/soggybottomboys-project1/");
 })
-$("#weather-card-image").on("click", function(){
+$(".weather-card-image").on("click", function(){
     window.open("https://tuckerv.github.io/weather-dashboard/");
 })
-$("#planner-card-image").on("click", function(){
+$(".planner-card-image").on("click", function(){
     window.open("https://tuckerv.github.io/daily-planner/");
 })
-$("#password-card-image").on("click", function(){
+$(".password-card-image").on("click", function(){
     window.open("https://tuckerv.github.io/Password-Generator/");
+})
+$(".project-2-image").on("click", function(){
+    window.open("https://soggybottomleaguemanager.herokuapp.com/");
+})
+$(".mvc-image").on("click", function(){
+    window.open("https://mvc-eat-da-burger.herokuapp.com/");
 })
 
 $(window).bind("resize", function () {
@@ -56,9 +62,6 @@ $(window).bind("resize", function () {
         $('.navbar-row').addClass('hide')
         $('.project-cards-static').addClass('hide')
         $('.project-cards-carousel').removeClass('hide')
-        // navbar-row
-        // project-cards-carousel
-        // project-cards-static
     }
 }).trigger('resize');
 
